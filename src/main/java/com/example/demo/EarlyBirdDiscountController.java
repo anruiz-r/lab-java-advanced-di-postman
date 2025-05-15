@@ -20,6 +20,7 @@ public class EarlyBirdDiscountController {
         LocalDate event = LocalDate.parse(eventDate);
         LocalDate booking = LocalDate.parse(bookingDate);
         double discount = earlyBirdDiscountService.getDiscount(event, booking);
+
         if (discount > 0) {
             return earlyBirdDiscountService.getDiscountMessage(discount);
         }
