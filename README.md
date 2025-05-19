@@ -92,9 +92,13 @@ Update your repository’s `README.md` to include:
 - A brief explanation of your design choices for the **EarlyBirdDiscountService**.
 - Answers to:
   - Why did you choose constructor-based DI for this lab?
+  Porque es la forma más recomendada de inyectar dependencias en Spring, ya que permite la inmutabilidad(que no cambie una vez creado) y facilita las pruebas unitarias.
   - What advantages do Postman pre-request and post-response scripts offer for automated testing?
+  Los pre-request permiten configurar el entorno antes de ejecutar la solicitud, mientras que los post-response permiten validar y manipular la respuesta después de recibirla.
   - How does your application behave when the early bird feature is disabled?
+    La aplicación devuelve un mensaje de error diciendo que el descuento no está disponible.
   - What are some challenges you faced when integrating advanced DI with API testing?
+    Conseguir que los scripts de Postman validaran adecuadamente las respuestas.
 
 <br />
 
